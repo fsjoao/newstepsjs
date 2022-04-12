@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site bonitinho</title>
+    <!--- esse link faz o arquivo em outro lugar, pra n ficar bagunçado-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<header>
+    <h1>Verificador de idade </h1>
+</header>
+
+<section>
+    <div>
+        <p>Ano de nascimento:
+            <input type="number" name="txtano" id="txtano">
+        </p>
+        <p>Sexo:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="radsex" id="bixa">
+            <label for="bixa">É bixa é?</label>
+        </p>
+        <p>
+            <input type="button" value="Verificar" onclick="corno()">
+        </p>
+
+    </div>
+    <div id="res">
+        Preencha os dados arriba
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; oajfs</p>
+
+</footer>
+<!---mesma coisa aqui, cria o arquivo em outro lugar-->
+<script src="script copy.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu é estrangeiro seu safado</title>
+</head>
+<body>
+<h1>Tu é estrangeiro?</h1>
+Da ideia de onde tu é: <input type="text" name="txtlugar" id='txtlugar'>
+<input type="button" value="Verificar" onclick="Verificar()">
+<div id='res'>
+
+</div>
+    <script>
+        function Verificar() {
+            var txtl = document.querySelector('input#txtlugar')
+            var res = document.querySelector("div#res")
+            var lugar = String(txtl.value)
+            res.innerHTML = `Você é de ${lugar}` 
+            if (lugar == 'Brasil') { 
+                res.innerHTML = `Tu é <strong>brasilis</strong> em viadan`
+            } 
+            else 
+                res.innerHTML = `Tu é <strong>gringão</strong> parceiro`
+            
+
+
+        }
+
+
+    </script>
+</body>
+</html>
